@@ -9,10 +9,12 @@ _Disclaimer:_ This is not intended for real use. This is only for demonstration 
 
 ## TMR
 
--
+![](https://en.wikipedia.org/wiki/Triple_modular_redundancy#/media/File:Majority_Logic.png)
 
 ## Worked Examples
 
-In the `TMR.py` file, located in the root of this directory, there is an example setup to test some TMR algorithms.
+In the `TMR.py` file, located in the root of this directory, there is an example setup to test some TMR algorithms. In this example an image of carl has 1 bitflip occuring every millisecond. This is a large exaggeration, only to demonstrate the concept of TMR. These bitflips can be seen below:
 
 ![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/animation.gif)
+
+to attempt to top degridation of the image, TMR must be performed 
