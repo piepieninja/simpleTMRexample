@@ -13,6 +13,6 @@ _Disclaimer:_ This is not intended for real use. This is only for demonstration 
 
 ## Worked Examples
 
-In the `TMR.py`
+In the `TMR.py` file, located in the root of this directory, there is an example setup to test some TMR algorithms.
 
-![](img/amimation.gif)
+![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/animation.gif)
