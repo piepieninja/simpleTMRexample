@@ -47,9 +47,35 @@ ani_im = plt.imshow(im_total, animated=True)
 
 def TMR():
     global pix0, pix1, pix2, pix_total
-    # An unoptimal solution
-    print "Running TMR"
-
+    # A purposefully unoptimal solution
+    print "Running TMR ..."
+    for x in range(0,im_total.size[0]-1):
+        for y in range(0,im_total.size[1]-1):
+            c0 = pix0[x,y]
+            c1 = pix1[x,y]
+            c2 = pix2[x,y]
+            if (c0 != c1):
+                if (c0 == c2):
+                    pix1[x,y]      = pix0[x,y]
+                    pix_total[x,y] = pix0[x,y]
+                else:
+                    pix0[x,y]      = pix1[x,y]
+                    pix_total[x,y] = pix1[x,y]
+            if (c0 != c2):
+                if (c0 == c1):
+                    pix2[x,y]      = pix0[x,y]
+                    pix_total[x,y] = pix0[x,y]
+                else:
+                    pix0[x,y]      = pix1[x,y]
+                    pix_total[x,y] = pix1[x,y]
+            if (c1 != c2):
+                if (c1 == c0):
+                    pix2[x,y]      = pix1[x,y]
+                    pix_total[x,y] = pix1[x,y]
+                else:
+                    pix1[x,y]      = pix2[x,y]
+                    pix_total[x,y] = pix2[x,y]
+    print 'udpated!'
 
 
 
