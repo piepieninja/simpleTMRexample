@@ -18,7 +18,7 @@ SEU_per_ms = 1
 TMR_enabled = False
 
 # TMR correction opportunties
-TMR_correction_rate = 50
+TMR_correction_rate = 100
 TMR_wait_count = 0
 
 # the source image to be tested
@@ -48,18 +48,29 @@ def TMR():
 
 
 
+
+
 # from: https://matplotlib.org/examples/animation/dynamic_image.html
 def updatefig(*args):
     global TMR_enabled, TMR_wait_count
     global pix0, pix1, pix2
+
+    # find the location to flip a bit
     x_flip = random.randint(0,im.size[0]-1)
     y_flip = random.randint(0,im.size[1]-1)
+
+    # choose the image that will have a bit flipped
+
     color = pix0[x_flip,y_flip]
+
+    # this is wher the TMR can occur
     if (TMR_wait_count == TMR_correction_rate):
         TMR_wait_count = 0
         TMR()
     else:
         TMR_wait_count += 1
+
+
     #print 'Flipping bits at pix0el [' + str(x_flip) + ',' + str(y_flip) + '] ' + str(color)
 
     # find where to flip the bit

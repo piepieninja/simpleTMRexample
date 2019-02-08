@@ -6,10 +6,28 @@ _Disclaimer:_ This is not intended for real use. This is only for demonstration 
 #### Dependencies
 - numpy
 - matplotlib
+- PIL (Python Image Library)
 
 ## TMR
 
+Fundamentally, TMR is exactly what it says it is. There are 3 copies of something and
+you can check values at particular locations to make sure all copies are still equal. If
+you notice that the copies are not equal, i.e. one copy is `0` and the other two are `1`,
+then you can choose to correct the copy that is  the outlier. As a logic circuite this looks like:
+
 ![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/Majority_Logic.png)
+
+And logically, assuming your bits are `b0`, `b1`, and `b2`:
+
+![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/Majority_Logic2.png)
+
+In python this could be done with:
+
+```Python
+if (not((not (b and b1)) and (not (b1 and b2)) and (not (b0 and b2)))):
+  # do some TMR here
+```
+
 
 ## Worked Examples
 
@@ -17,4 +35,4 @@ In the `TMR.py` file, located in the root of this directory, there is an example
 
 ![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/animation.gif)
 
-to attempt to top degridation of the image, TMR must be performed
+to attempt to slow the degridation of the image, TMR can be performed.
