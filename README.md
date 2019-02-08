@@ -15,4 +15,4 @@ _Disclaimer:_ This is not intended for real use. This is only for demonstration 
 
 In the `TMR.py`
 
-![carl irradiated](img/amimation.gif "Logo Title Text 1")
+![](img/amimation.gif)
