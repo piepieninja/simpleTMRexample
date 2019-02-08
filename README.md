@@ -15,7 +15,11 @@ you can check values at particular locations to make sure all copies are still e
 you notice that the copies are not equal, i.e. one copy is `0` and the other two are `1`,
 then you can choose to correct the copy that is  the outlier. As a logic circuite this looks like:
 
+<center>
+
 ![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/Majority_Logic.png)
+
+</center>
 
 And logically, assuming your bits are `b0`, `b1`, and `b2`:
 
