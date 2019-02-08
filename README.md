@@ -35,4 +35,5 @@ In the `TMR.py` file, located in the root of this directory, there is an example
 
 ![](https://github.com/piepieninja/simpleTMRexample/blob/master/img/animation.gif)
 
-to attempt to slow the degridation of the image, TMR can be performed.
+to attempt to slow the degridation of the image, TMR can be performed. In these examples the TMR algorthm occurs at a slower
+rate than bitflips occur. This is does to reflect the reality TMR is only capible of slowing the onslaught of radiation.

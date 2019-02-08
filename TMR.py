@@ -32,6 +32,7 @@ im = Image.open(img_src) # Can be many different formats.
 pix0 = im.load()
 pix1 = pix0
 pix2 = pix0
+pix_total = pix0
 
 print 'loaded ' + str(img_src) + ' of size: ' + str(im.size)  # Get the width and hight of the image for iterating over
 ani_im = plt.imshow(im, animated=True)
@@ -53,7 +54,7 @@ def TMR():
 # from: https://matplotlib.org/examples/animation/dynamic_image.html
 def updatefig(*args):
     global TMR_enabled, TMR_wait_count
-    global pix0, pix1, pix2
+    global pix0, pix1, pix2, pix_total
 
     # find the location to flip a bit
     x_flip = random.randint(0,im.size[0]-1)
