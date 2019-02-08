@@ -18,7 +18,7 @@ SEU_per_ms = 1
 TMR_enabled = False
 
 # TMR correction opportunties
-TMR_correction_rate = 400
+TMR_correction_rate = 500
 TMR_wait_count = 0
 
 # the source image to be tested
