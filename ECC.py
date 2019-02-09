@@ -43,11 +43,18 @@ print 'loaded ' + str(img_src) + ' of size: ' + str(im_total.size)  # Get the wi
 ani_im = plt.imshow(im_total, animated=True)
 
 # =================================================== #
-#              EDIT THIS FUNCTION CODE                #
+#                   EDIT THIS CODE                    #
 # =================================================== #
 
+# Make the parity array
+parity_array = []
+# Do parity array here
+
 def ECC():
-    global pix0, pix1, pix2, pix_total
+    global pix_total, parity_array
+    # Basically just ignore pix0, pix1, and pix2
+    # and just focus on pix_total, make a parity bit
+    # system for this pixel array
     print "Running ECC ..."
 
 
